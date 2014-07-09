@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta charset="UTF-8">
+    <title>asdfasdf</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .cards {
+            -webkit-perspective:800px;
+            -webkit-perspective-origin: 50% 0%;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card {
+            width: 100%;
+            height: 52.5%;
+            position: absolute;
+        }
+
+        .card1 {
+            background-color: red;
+
+        }
+
+        .card2{
+            background-color: blue;
+        }
+
+        .animate {
+            transition:all 700ms ease-in;
+        }
+
+        .card.top-stack  {
+            -webkit-transform:scale(1) translateY(0%) translateZ(0px);
+        }
+        .card.bottom-stack  {
+            -webkit-transform: scale(0.8) translateY(125%) translateZ(0px);
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="cards">
+    <div class="card card1 top-stack">
+        card1
+    </div>
+    <div class="card card2 bottom-stack animate">
+        card2
+    </div>
+</div>
+
+
+</body>
+</html>
